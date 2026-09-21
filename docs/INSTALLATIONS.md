@@ -67,14 +67,14 @@ To update debian, run
 ```bash
 sudo apt update
 ```
-Now install Gazebo.
+Now install Gazebo
 ```bash
 sudo apt install gazebo9
 ```
 >[!NOTE]
 >Although in the website the gazebo installation version is 11 we will be using version 9 for compatibility of the existing Int-Bot2 software.
 
-Run Gazebo.
+Run Gazebo
 ```bash
 gazebo
 ```
