@@ -15,7 +15,7 @@ According to the instruction manual the INT-BALL2 have the following operation e
 >I am soon gonna try and explain how to setup a virtual machine both for Windows and Linux. The problem that I have regarding this is that I do not use windows anymore so I may miss some details.
 > I recommend the following Virtual Machines to be used:
 > - For Windows: Oracle Virtual Box
-> - For Linux: QEMO/KVM with Virt-Manage GUI
+> - For Linux: QEMO/KVM with Virt-Manager GUI
 >   
 > You can research tutorials anyway I do not think they are that difficult to configure.
 
@@ -26,7 +26,7 @@ curl (which stands for "Client URL") is a command-line tool used to transfer dat
 
 To install in ubuntu
 ```bash
-sudo apt install curl
+sudo apt install curl -y
 ```
 > [!NOTE]
 > -y in used to skip the confirmation question in installations
