@@ -34,7 +34,9 @@ sudo apt install curl
 ## Installing ROS and Gazebo
 According to the manual the Int-Ball2 Technology Demonstration Platform uses ROS and Gazebo, and it is necessary to use a Gazebo version higher than version 9.0.9. 
 So the following should be done for the installation.
+
 **Installing Gazebo**
+
 ##### Here is the guide for Gazebo installation (currently at 2026 it is Gazebo version 11): https://classic.gazebosim.org/tutorials?tut=install_ubuntu
 >[!WARNING]
 > DO NOT USE the one liner installation it is deprecated.
