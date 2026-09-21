@@ -182,7 +182,43 @@ pip3 install empy -y
 >[!NOTE]
 >In the manual it was stated that empy had a bug where you need to specify the version to properly install it. I have tried it in the terminal and I believe that the bug has been fixed, thus we do not need to specify the version here.
 
+## Python3 Version for ROS Package (catkin)
+Navigate to 
+```bash
+/opt/ros/melodic/etc/catkin/profile.d/
+```
+Use any code editor (I recommend neovim for linux) 
+
+In the manual to edit the shell script
+```bash
+sudo vi 1.ros_python_version.sh
+```
+When using nvim 
+```bash
+sudo nvim 1.ros_python_version.sh
+```
+If you are unfamiliar with these text editors you can use `nano`
+```bash
+sudo nano 1.ros_python_version.sh
+```
+
+In the script you will see
+
+```shell
+# generated from ros_environment/env-hooks/1.ros_python_version.sh.in
+
+export ROS_PYTHON_VERSION=2
+```
+
+Change it to
 
 
+```shell
+# generated from ros_environment/env-hooks/1.ros_python_version.sh.in
+
+export ROS_PYTHON_VERSION=3
+```
+>[!NOTE]
+>I SLEEP NOW BYE
 
 
