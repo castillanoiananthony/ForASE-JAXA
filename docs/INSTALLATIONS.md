@@ -6,4 +6,8 @@
 Hi from Ian Anthony Castillano
 I wanna share my sweet struggles in installing ros and gazebo for JAXA
 
-According to the instruction manual
+According to the instruction manual the INT-BALL2 have the following operation environment:
+- OS: Ubuntu 18.04
+- Middleware: Robot Operating System (ROS/Melodic)
+- Body Processor: Nvidia Jetson TX2, Linux for Tegra (Ubuntu Based File System)
+
