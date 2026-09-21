@@ -12,7 +12,7 @@ According to the instruction manual the INT-BALL2 have the following operation e
 - Body Processor: Nvidia Jetson TX2, Linux for Tegra (Ubuntu Based File System)
 
 >[!NOTE]
->I am soon gonna try to explain how to setup a virtual machine both for Windows and Linux. The problem that I have regarding this is that I do not use windows anymore so I may miss some details.
+>If given enough energy I am going to try to explain how to setup a virtual machine both for Windows and Linux. The problem that I have regarding this is that I do not use windows anymore so I may miss some details.
 > I recommend the following Virtual Machines to be used:
 > - For Windows: Oracle Virtual Box
 > - For Linux: QEMO/KVM with Virt-Manager GUI
