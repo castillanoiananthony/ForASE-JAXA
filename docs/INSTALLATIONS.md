@@ -32,7 +32,7 @@ sudo apt install curl -y
 > -y is used to skip the confirmation question in installations
 > 
 ## Installing ROS and Gazebo
-According to the manual the Int-Ball2 Technology Demonstration Platform uses ROS and Gazebo, and it is necessary to use a Gazebo version higher than version 9.0.9. 
+According to the manual the Int-Ball2 Technology Demonstration Platform uses ROS and Gazebo, and it is necessary to use a Gazebo version higher than version 9.0.0. 
 So the following should be done for the installation.
 
 **Installing Gazebo**
