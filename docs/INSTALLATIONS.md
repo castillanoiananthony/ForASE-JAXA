@@ -12,7 +12,7 @@ According to the instruction manual the INT-BALL2 have the following operation e
 - Body Processor: Nvidia Jetson TX2, Linux for Tegra (Ubuntu Based File System)
 
 >[!NOTE]
->I am soon gonna try and explain how to setup a virtual machine both for Windows and Linux. The problem that I have regarding this is that I do not use windows anymore so I may miss some details.
+>I am soon gonna try to explain how to setup a virtual machine both for Windows and Linux. The problem that I have regarding this is that I do not use windows anymore so I may miss some details.
 > I recommend the following Virtual Machines to be used:
 > - For Windows: Oracle Virtual Box
 > - For Linux: QEMO/KVM with Virt-Manager GUI
@@ -170,4 +170,19 @@ sudo apt install python3-pip -y
 >  pip is the standard package manager for Python. It is a command-line tool that allows you to download, install, update, and manage extra libraries and dependencies that are not included in the standard Python installation.
 
 ## Installing ROS Related Packages of Python
+We will follow what the manual has instructed.
+
+```bash
+pip3 install rospkg -y
+```
+and 
+```bash
+pip3 install empy -y
+```
+>[!NOTE]
+>In the manual it was stated that empy had a bug where you need to specify the version to properly install it. I have tried it in the terminal and I believe that the bug has been fixed, thus we do not need to specify the version here.
+
+
+
+
 
