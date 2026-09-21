@@ -108,5 +108,5 @@ sudo apt install python3-pip -y
 > [!NOTE]
 >  pip is the standard package manager for Python. It is a command-line tool that allows you to download, install, update, and manage extra libraries and dependencies that are not included in the standard Python installation.
 
-## Installing ROS
+## Installing ROS Related Packages of Python
 
