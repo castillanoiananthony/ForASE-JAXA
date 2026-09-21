@@ -127,6 +127,28 @@ source ~/.bashrc
 sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 ```
 
+Now you need to initialize rosdep.
+
+First install rosdep
+```bash
+sudo apt install python-rosdep
+```
+Initialize rosdep
+```bash
+sudo rosdep init
+rosdep update
+```
+Check if ROS is working 
+```bash
+source /opt/ros/melodic/setup.bash
+roscore
+```
+
+If it outputs
+```bash
+started core service [/rosout]
+```
+That means ros is working now you can Ctrl+C to stop it.
 
 
 ## Installing Python in Ubuntu 
