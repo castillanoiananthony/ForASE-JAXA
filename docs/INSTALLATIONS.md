@@ -22,14 +22,14 @@ According to the instruction manual the INT-BALL2 have the following operation e
 Assuming you have already set up your Unbutu let us now have the step by step process (according to the guide book) on how to install the required middleware.
 
 ## Client URL
-curl (which stands for "Client URL") is a command-line tool used to transfer data to or from a network server using one of its dozens of supported protocols (like HTTP, HTTPS, FTP, and SFTP).Essentially, it lets you interact with websites, APIs, and servers directly from your terminal without needing a web browser.
+curl (which stands for "Client URL") is a command-line tool used to transfer data to or from a network server using one of its dozens of supported protocols (like HTTP, HTTPS, FTP, and SFTP). Essentially, it lets you interact with websites, APIs, and servers directly from your terminal without needing a web browser.
 
-To install in ubuntu
+To install in Ubuntu
 ```bash
 sudo apt install curl -y
 ```
 > [!NOTE]
-> -y in used to skip the confirmation question in installations
+> -y is used to skip the confirmation question in installations
 > 
 ## Installing ROS and Gazebo
 According to the manual the Int-Ball2 Technology Demonstration Platform uses ROS and Gazebo, and it is necessary to use a Gazebo version higher than version 9.0.9. 
@@ -51,7 +51,7 @@ To confirm, run
 ```bash
 cat /etc/apt/sources.list.d/gazebo-stable.list
 ```
-and it should output
+And it should output
 ```bash
 deb http://packages.osrfoundation.org/gazebo/ubuntu-stable bionic main
 ```
@@ -67,14 +67,14 @@ To update debian, run
 ```bash
 sudo apt update
 ```
-Now install Gazebo
+Now install Gazebo.
 ```bash
 sudo apt install gazebo9
 ```
 >[!NOTE]
 >Although in the website the gazebo installation version is 11 we will be using version 9 for compatibility of the existing Int-Bot2 software.
 
-Now you can run Gazebo
+Run Gazebo.
 ```bash
 gazebo
 ```
