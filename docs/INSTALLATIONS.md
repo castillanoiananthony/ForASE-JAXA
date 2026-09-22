@@ -560,6 +560,35 @@ sudo ln -s /opt/Qt/5.12.3 /opt/Qt/5
 
 6. Setup Font
 
+Navigate to your Downloads folder
+```bash
+cd ~/Downloads
+```
+ Create a file to contain the `.ttf` files
+```bash
+mkdir Roboto-Font
+```
+
+Navigate to the created file
+```bash
+cd Roboto-Font
+```
+
+Download Roboto Font source file
+```bash
+sudo wget https://github.com/googlefonts/roboto/releases/download/v2.138/roboto-android.zip
+```
+
+Copy the `.ttf` files to `/usr/local/share/fonts/`
+```bash
+sudo cp Roboto*.ttf /usr/local/share/fonts/
+```
+
+Regenerates the font information cache
+```bash
+fc-cache -f -v
+```
+
 
 
 
