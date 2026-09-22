@@ -469,6 +469,34 @@ ls -l /usr/local/src/vlc
 
 ### Installing Qt
 
+1. Prepare the Installing Directory
+Navigate to `/opt/`
+```bash
+cd /opt
+```
+Create the installing directory
+```bash
+mkdir Qt
+```
+2. Download the `Qt Installer`
+Navigate to the downloads folder
+```bash
+cd ~/Downloads
+```
+Download the source file
+```bash
+sudo wget https://download.qt.io/archive/qt/5.12/5.12.8/qt-opensource-linux-x64-5.12.8.run
+```
+Make it executable
+```bash
+sudo chmod +x qt-opensource-linux-x64-5.12.8.run
+```
+Run the installer
+```bash
+./qt-opensource-linux-x64-5.12.8.run
+```
+
+
 
 
 
