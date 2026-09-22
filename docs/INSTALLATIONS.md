@@ -495,6 +495,61 @@ Run the installer
 ```bash
 ./qt-opensource-linux-x64-5.12.8.run
 ```
+3. Configuring the installer
+
+<br>1. After running the installer you will see the following window<br>
+
+<img width="1072" height="658" alt="image" src="https://github.com/user-attachments/assets/6d0671cb-be97-41d4-93fd-e3e0bccbc543" />
+
+<br>2. Login or Sign-up an account<br>
+
+<img width="1070" height="656" alt="image" src="https://github.com/user-attachments/assets/a8a72480-b070-4d2a-83a3-f580aed8b051" />
+
+<br>3. It will ask for email verification<br>
+
+<img width="1065" height="654" alt="image" src="https://github.com/user-attachments/assets/ec99febb-1237-43a4-8099-76df24241b6e" />
+
+
+<br>4. Verify your email<br>
+
+
+<img width="1448" height="780" alt="image" src="https://github.com/user-attachments/assets/c854ed88-283b-4877-a909-050c71bd1117" />
+
+<img width="628" height="780" alt="image" src="https://github.com/user-attachments/assets/a7cbf108-fd5a-4b05-9093-aa47ab3f1253" />
+
+<br>5. Check the box of "I have read and approved the obligation of using Open Source Qt," <br>
+
+<img width="1064" height="653" alt="image" src="https://github.com/user-attachments/assets/365b8392-ae26-442d-8684-016f6990333a" />
+
+
+<br>6. Now you will begin the setup<br>
+<img width="1073" height="661" alt="image" src="https://github.com/user-attachments/assets/02a1eed0-54ed-4af2-8964-2a2cf321c06c" />
+
+<br>7. Set the directory as `/opt/Qt`
+<img width="1069" height="654" alt="image" src="https://github.com/user-attachments/assets/c9b9936e-6a9f-479f-b62d-949e0933474a" />
+
+<br>8. Select `5.12.3 Desktop gcc 64-bit` as the targeted version for installation<br>
+<img width="1062" height="658" alt="image" src="https://github.com/user-attachments/assets/cf53b7b3-c850-470e-8aca-8cc771029209" />
+
+<br>9. Agree to the terms and consitions<br>
+<img width="1064" height="653" alt="image" src="https://github.com/user-attachments/assets/0cbac92f-3d1c-42b5-a94a-10a2f4166fad" />
+
+<br> 10. Install <br>
+<img width="1254" height="645" alt="image" src="https://github.com/user-attachments/assets/21539d51-87aa-4f4a-b8a9-4e97a20b5dcc" />
+
+>[!IMPORTANT]
+> I experienced an issue here where the installer said that the device does not have enough disk size. I solved this problem by increasing the partition used by the virtual machine.
+
+<br>11. You have now successfully installed Qt<br>
+<img width="1260" height="652" alt="image" src="https://github.com/user-attachments/assets/014ac15a-4adf-4ff6-bd48-e4c3e2057169" />
+
+
+
+
+
+
+
+
 
 
 
