@@ -368,7 +368,7 @@ libxcb-keysyms1-dev libxcb-randr0-dev libxcb-composite0-dev \
 lua5.2 lua5.2-dev protobuf-compiler bison libdvbpsi-dev libpulse-dev
 ```
 
-2. Install `VLC Media Player` Source File
+2. Download `VLC Media Player` Source File
 
 Install Source
 ```bash
@@ -382,6 +382,92 @@ Decompress the File
 ```bash
 sudo tar Jxvf vlc-3.0.7.1.tar.xz
 ```
+
+2. Configure the File
+
+Navigate to `vlc-3.0.7.1`
+```bash
+cd vlc-3.0.7.1
+```
+Configure with
+```bash
+CFLAGS="-I/usr/local/include" \
+LDFLAGS="-L/usr/local/lib" \
+X264_CFLAGS="-L/usr/local/lib -I/usr/local/include" \
+X264_LIBS="-lx264" \
+X26410b_CFLAGS="-L/usr/local/lib -I/usr/local/include" \
+X26410b_LIBS="-lx264" \
+AVCODEC_CFLAGS="-L/usr/local/lib -I/usr/local/include" \
+AVCODEC_LIBS="-lavformat -lavcodec -lavutil" \
+AVFORMAT_CFLAGS="-L/usr/local/lib -I/usr/local/include" \
+AVFORMAT_LIBS="-lavformat -lavcodec -lavutil" \
+sudo ./configure \
+--disable-a52 \
+--enable-merge-ffmpeg \
+--enable-x264 \
+--enable-x26410b \
+--enable-dvbpsi
+```
+
+3. Build and Install the Source File
+```bash
+sudo make install
+```
+
+>[!IMPORTANT]
+>When confirming `vlc` with `vlc -version` I encountered a problem here
+>```bash
+>ian@ian-Standard-PC-Q35-ICH9-2009:/usr/local/src/vlc-3.0.7.1$ vlc -version
+>vlc: error while loading shared libraries: libvlc.so.5: cannot open shared object file: No such file or directory
+>```
+>This means that `vlc` is installed, proven by using `whicg vlc`
+>```bash
+>ian@ian-Standard-PC-Q35-ICH9-2009:/usr/local/src/vlc-3.0.7.1$ which vlc
+>/usr/local/bin/vlc
+>```
+>But Ubuntu doesn't know where to find its shared libraries.
+>
+>To fix this we need to tell Ubuntu where to find the `vlc` files
+>
+>Check where `libvlc.so.5` is
+>```bash
+>find /usr/local -name "libvlc.so*"
+>```
+>Result should be something like
+>```bash
+>/usr/local/lib/libvlc.so
+>/usr/local/lib/libvlc.so.5.6.0
+>/usr/local/lib/libvlc.so.5
+>/usr/local/src/vlc-3.0.7.1/lib/.libs/libvlc.so
+>/usr/local/src/vlc-3.0.7.1/lib/.libs/libvlc.so.5.6.0
+>/usr/local/src/vlc-3.0.7.1/lib/.libs/libvlc.so.5.6.0T
+>/usr/local/src/vlc-3.0.7.1/lib/.libs/libvlc.so.5
+>```
+>
+>Tell Ubuntu where `/usr/lacal/lib` is
+>```bash
+>echo "/usr/local/lib" | sudo tee /etc/ld.so.conf.d/local.conf
+>```
+>and 
+>```bash
+>sudo ldconfig
+>```
+>Now confirm it with
+>```bash
+>vlc -version
+>```
+>I have fixed my problem with this. You can research online if this does not fix your problem.
+
+4. Prepare the Symbolic Link to the Downloaded File Source
+```bash
+sudo ln -s /usr/local/src/vlc-3.0.7.1 /usr/local/src/vlc
+```
+Confirm with
+```bash
+ls -l /usr/local/src/vlc
+```
+
+### Installing Qt
 
 
 
