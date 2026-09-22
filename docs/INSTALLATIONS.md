@@ -543,6 +543,20 @@ Run the installer
 <br>11. You have now successfully installed Qt<br>
 <img width="1260" height="652" alt="image" src="https://github.com/user-attachments/assets/014ac15a-4adf-4ff6-bd48-e4c3e2057169" />
 
+4. One line Execution
+To execute `Qt` with `qtcreator` run
+```bash
+sudo ln -s /opt/Qt/Tools/QtCreator/bin/qtcreator /usr/local/bin/qtcreator
+```
+Now try
+```bash
+qtcreator
+```
+
+6. Prepare the Symbolic Link
+```bash
+sudo ln -s /opt/Qt/5.12.3 /opt/Qt/5
+```
 
 
 
