@@ -553,10 +553,12 @@ Now try
 qtcreator
 ```
 
-6. Prepare the Symbolic Link
+5. Prepare the Symbolic Link
 ```bash
 sudo ln -s /opt/Qt/5.12.3 /opt/Qt/5
 ```
+
+6. Setup Font
 
 
 
