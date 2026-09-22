@@ -150,6 +150,10 @@ started core service [/rosout]
 ```
 That means ros is working now you can Ctrl+C to stop it.
 
+**Installing ROS related packages in collaboration with Gazebo**
+```bash
+sudo apt install ros-melodic-gazebo-*
+```
 
 ## Installing Python in Ubuntu 
 
@@ -218,7 +222,323 @@ Change it to
 
 export ROS_PYTHON_VERSION=3
 ```
+## Ground Support Equipment
+The Int-Ball2 Ground Support Equipment shall be built and installed through the following.
+### Newtide Assembler (NASM)
+
+Netwide Assembler (NASM) is a popular open-source software tool that translates assembly language code into machine code for Intel x86 and x86-64 microprocessors
+
+1. Dowbload NASM
+
+Navigate to `/usr/local/src`
+```bash
+cd /usr/local/src
+```
+```bash
+sudo wget https://www.nasm.us/pub/nasm/releasebuilds/2.15.05/nasm-2.15.05.tar.gz
+```
+and extract
+```bash
+sudo tar zxvf nasm-2.15.05.tar.gz
+```
+
+2. Configure NASM
+
+Navigate to `nasm-2.15.05`
+```bash
+cd nasm-2.15.05
+```
+Begin configuration
+```bash
+sudo ./configure
+```
+
+3. Build and Install the Source File
+```bash
+sudo make install
+```
+
+### Video Reception Environment
+
+##### The download links from this section is from https://trans-it.net/blog/centos7-ffmpeg43-h264-fdkaac/ note that this blog is in Japanese please use translation for better comprehension of each step.
+
+Here we will be installing `x264`
+
+1. Download x264-master
+Navigate back to `/usr/local/src`
+```bash
+cd /usr/local/src
+```
+
+Download the file
+```bash
+sudo wget https://code.videolan.org/videolan/x264/-/archive/master/x264-master.tar.gz
+```
+
+Decompress the file
+```bash
+sudo tar xvf x264-master.tar.gz
+```
+
+2. Configure x246-master
+
+Navigate to `x264-master`
+```bash
+cd x264-master
+```
+
+Begin configuration
+```bash
+ ./configure \
+--disable-asm \
+--enable-shared \
+--enable-static \
+--enable-pic 
+```
+
+3. Build and Install the Source File
+```bash
+sudo make install
+```
+
+### Installing FFMPEG
+
+1. Download FFMPEG
+   
+Navigate back to `/usr/local/src`
+```bash
+cd /usr/local/src
+```
+
+Download the file
+```bash
+sudo wget https://ffmpeg.org/releases/ffmpeg-4.1.3.tar.gz
+```
+
 >[!NOTE]
->I SLEEP NOW BYE
+>In the website link for the downloads the version for ffmpeg is at 4.3 but to follow the manual we will change it to version 4.1.3.
+
+Decompress the file
+```bash
+sudo tar xvzf ffmpeg-4.3.tar.gz
+```
+
+2. Configure the File
+
+Navigate to `ffmpeg-4.1.3`
+```bash
+cd ffmpeg-4.1.3
+```
+
+Configure the File
+```bash
+sudo ./configure \
+--extra-cflags="-I/usr/local/include" \
+--extra-ldflags="-L/usr/local/lib" \
+--extra-libs="-lpthread -lm -ldl -lpng" \
+--enable-pic \
+--disable-programs \
+--enable-shared \
+--enable-gpl \
+--enable-libx264 \
+--enable-encoder=png \
+--enable-version3
+```
+
+3. Build and Install the Source File
+```bash
+sudo make install
+```
+
+>[!NOTE]
+> When checking for the ffmpeg it will result in `Command 'ffmpeg' not found` this is okay since we are only using ffmpeg libraries not the ffmpeg command itself.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
