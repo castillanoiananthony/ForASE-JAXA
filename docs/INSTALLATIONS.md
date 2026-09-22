@@ -120,7 +120,7 @@ echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 >[!NOTE]
-> If you are using more than one ROS distribution, changing the environment, or want  to change to zsh instead of bash script check the given website link. As of now we will be using the default for our step up.
+> If you are using more than one ROS distribution, changing the environment, or want  to change to zsh instead of bash script check the given website link. As of now we will be using the default for our set up.
 
 6. Additional Dependencies for Building Packages
 ```bash
@@ -228,7 +228,7 @@ The Int-Ball2 Ground Support Equipment shall be built and installed through the 
 
 Netwide Assembler (NASM) is a popular open-source software tool that translates assembly language code into machine code for Intel x86 and x86-64 microprocessors
 
-1. Dowbload NASM
+1. Download `nasm` Source File
 
 Navigate to `/usr/local/src`
 ```bash
@@ -264,7 +264,7 @@ sudo make install
 
 Here we will be installing `x264`
 
-1. Download x264-master
+1. Download `x264-master` Source File
 Navigate back to `/usr/local/src`
 ```bash
 cd /usr/local/src
@@ -303,7 +303,7 @@ sudo make install
 
 ### Installing FFMPEG
 
-1. Download FFMPEG
+1. Download `ffmpeg` Source File
    
 Navigate back to `/usr/local/src`
 ```bash
@@ -352,6 +352,36 @@ sudo make install
 
 >[!NOTE]
 > When checking for the ffmpeg it will result in `Command 'ffmpeg' not found` this is okay since we are only using ffmpeg libraries not the ffmpeg command itself.
+
+### Install VLC Media Player
+
+1. Install Dependencies
+   
+Navigate back to `/usr/local/src`
+```bash
+cd /usr/local/src
+```
+Install the dependency packages
+```bash
+sudo apt install libasound2-dev libxcb-shm0-dev libxcb-xv0-dev \
+libxcb-keysyms1-dev libxcb-randr0-dev libxcb-composite0-dev \
+lua5.2 lua5.2-dev protobuf-compiler bison libdvbpsi-dev libpulse-dev
+```
+
+2. Install `VLC Media Player` Source File
+
+Install Source
+```bash
+sudo wget https://download.videolan.org/pub/videolan/vlc/3.0.7.1/vlc-3.0.7.1.tar.xz
+```
+
+>[!NOTE]
+> The manual did not provided any source for `VLC Media Player` source file, I HATE IT, so I found one online.
+
+Decompress the File
+```bash
+sudo tar Jxvf vlc-3.0.7.1.tar.xz
+```
 
 
 
