@@ -413,7 +413,7 @@ sudo ./configure \
 ```bash
 sudo make install
 ```
-
+Go to [CHANGE OF PARTITION](#change-of-partition) for a wider system use of partition.
 >[!IMPORTANT]
 >When confirming `vlc` with `vlc -version` I encountered a problem here
 >```bash
@@ -588,6 +588,10 @@ Regenerates the font information cache
 ```bash
 fc-cache -f -v
 ```
+
+## CHANGE OF PARTITION 
+>[!IMPORTANT]
+> Due to a recent crash out on partition allocation I am now suggesting that the storage that is to be used by your virtual manager should be in your `/home` so that you will be able to access the entire storage of your computer. 
 
 
 
