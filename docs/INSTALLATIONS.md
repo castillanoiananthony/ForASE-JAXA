@@ -1,10 +1,10 @@
-# INSTALLING ROS AND GAZEBO 9 IN UBUNTU 
+# INSTALLING INT-BOT2 WARES
 ### ACCORDING TO THE "INT-BALL 2 TECHNOLOGY DEMONSTRATION USER PROGRAMMING PLATFORM USER'S MANUAL"
 
 ##### Download the Ubuntu iso: https://releases.ubuntu.com/18.04.6/
 
 Hi from Ian Anthony Castillano
-I wanna share my sweet struggles in installing ros and gazebo in Ubuntu.
+I wanna share my sweet struggles in installing ros, gazebo, and the middleware required for Int-Ball2 inside Ubuntu Environment.
 <br><br>
 According to the instruction manual the INT-BALL2 have the following operation environment:
 - OS: Ubuntu 18.04
