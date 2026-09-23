@@ -222,7 +222,7 @@ Change it to
 
 export ROS_PYTHON_VERSION=3
 ```
-## Ground Support Equipment
+## Ground Support Equipment Installation
 The Int-Ball2 Ground Support Equipment shall be built and installed through the following.
 ### Newtide Assembler (NASM)
 
@@ -591,7 +591,8 @@ fc-cache -f -v
 
 ## CHANGE OF PARTITION 
 >[!IMPORTANT]
-> Due to a recent crash out on partition allocation I am now suggesting that the storage that is to be used by your virtual manager should be in your `/home` so that you will be able to access the entire storage of your computer. 
+> Due to a recent crash out on partition allocation I am now suggesting that the storage that is to be used by your virtual manager should be in your `/home` so that you will be able to access the entire storage of your computer.
+
 
 
 
