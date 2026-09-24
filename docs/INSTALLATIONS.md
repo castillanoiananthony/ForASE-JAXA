@@ -598,8 +598,25 @@ fc-cache -f -v
 
 ### Deploying Source Code
 
+Here we are going to clone the GitHub repositories.
 
+1. Create a directory for the repositories
+```bash
+mkdir ~/INT-BALL2 GITHUB 
+```
+and navigate to that directory
+```bash
+cd ~/'INT_BALL2 GITHUB'
+```
 
+Clone the repositories
+```bash
+git clone -b melodic https://github.com/jaxa/int-ball2_simulator_docker.git
+```
+and 
+```bash
+git clone -b melodic https://github.com/jaxa/int-ball2_simulator.git
+```
 
 
 
