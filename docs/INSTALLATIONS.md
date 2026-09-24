@@ -3,6 +3,9 @@
 
 ##### Download the Ubuntu iso: https://releases.ubuntu.com/18.04.6/
 
+### GitHub 1 - Int-Ball2 Simulator: https://github.com/jaxa/int-ball2_simulator/tree/melodic
+### GitHub 2 - Int-Ball2 Simulator Docker: https://github.com/jaxa/int-ball2_simulator_docker/tree/melodic/ib2_user_ws/src/user
+
 Hi from Ian Anthony Castillano
 I wanna share my sweet struggles in installing ros, gazebo, and the middleware required for Int-Ball2 inside Ubuntu Environment.
 <br><br>
@@ -593,6 +596,7 @@ fc-cache -f -v
 >[!IMPORTANT]
 > Due to a recent crash out on partition allocation I am now suggesting that the storage that is to be used by your virtual manager should be in your `/home` so that you will be able to access the entire storage of your computer.
 
+### Deploying Source Code
 
 
 
