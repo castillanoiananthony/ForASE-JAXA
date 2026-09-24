@@ -609,7 +609,7 @@ and navigate to that directory
 cd ~/'INT_BALL2 GITHUB'
 ```
 
-Clone the repositories
+2. Clone the repositories
 ```bash
 git clone -b melodic https://github.com/jaxa/int-ball2_simulator_docker.git
 ```
@@ -618,6 +618,7 @@ and
 git clone -b melodic https://github.com/jaxa/int-ball2_simulator.git
 ```
 
+3. Check 
 
 
 
